@@ -1,0 +1,26 @@
+.header {
+  background-color: $color-white;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__logo > img {
+    height: 3rem;
+  }
+
+  &__siteName {
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    font-weight: $font-bold;
+    color: $color-delete;
+  }
+}

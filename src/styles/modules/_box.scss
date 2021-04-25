@@ -1,0 +1,51 @@
+.boxContainer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .box {
+    flex: calc(50% - 3rem);
+    background-color: $color-white;
+    border: $generic-border;
+    border-radius: 0.75rem;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3rem;
+      height: 5rem;
+      background-color: $color-light;
+    }
+
+    &__headerTitle {
+      display: flex;
+      align-items: center;
+      font-size: 2.2rem;
+      font-weight: $font-bold;
+      color: $color-do;
+    }
+
+    &__headerCircle {
+      margin-right: 1rem;
+    }
+
+    &__headerCount {
+      padding: 0.3rem 1.3rem;
+      font-weight: $font-medium;
+      font-size: 1.3rem;
+      color: $color-white;
+      background-color: $color-gray;
+      border-radius: 5rem;
+      margin-left: 1.5rem;
+    }
+  }
+}
